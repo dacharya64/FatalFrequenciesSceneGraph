@@ -1,14 +1,67 @@
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/6.0.0/mermaid.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/6.0.0/mermaid.js"></script>
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="https://www.devi-a.com">
-</head>
-<body>
-  <div class="row">
-    <div id="graphInfo">
-  </div>
-</body>
+<html>
+    <body>
+        <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+        <div class=mermaid>
+          graph TD
+          sadies_sob_story[Sadie's Sob Story]
+          fullers_electrical_repair[Fuller's Electrical Repair]
+          charming_charlie[Charming Charlie] 
+          the_psychical_investigator[The Psychical Investigator] 
+          the_peculiar_death_of_myron_fink[The Peculiar Death of Myron Fink] 
+          fuller_himself[Fuller Himself] 
+          temple_of_nepthys[Temple of Nepthys] 
+          the_leg_breaker[The Leg Breaker] 
+          charlie_comes_clean[Charlie Comes Clean] 
+          what_the_cops_know[What the Cops Know] 
+          interviewing_the_neighbors[Interviewing the Neighbors] 
+          georges_apartment[George's Apartment] 
+          addie_needs_answers[Addie Needs Answers] 
+          men_gone_missing[Men Gone Missing] 
+          breaking_into_fullers[Breaking Into Fuller's]
+          the_thing_in_the_morgue[The Thing in the Morgue] 
+          questioning_pearl[Questioning Pearl] 
+          miracle_machine[Miracle Machine] 
+          going_on_the_grid[Going on the Grid] 
+          sadie_and_the_scoop[Sadie and the Scoop]
+          sadies_sob_story --> fullers_electrical_repair
+          sadies_sob_story --> the_peculiar_death_of_myron_fink
+          sadies_sob_story --> what_the_cops_know
+          fullers_electrical_repair --> fuller_himself
+          fullers_electrical_repair --> charming_charlie
+          charming_charlie --> the_peculiar_death_of_myron_fink
+          charming_charlie --> fuller_himself
+          charming_charlie --> the_leg_breaker
+          charming_charlie --> temple_of_nepthys
+          the_psychical_investigator --> temple_of_nepthys
+          the_peculiar_death_of_myron_fink --> what_the_cops_know
+          the_peculiar_death_of_myron_fink --> interviewing_the_neighbors
+          fuller_himself --> charming_charlie
+          fuller_himself --> the_psychical_investigator
+          fuller_himself --> temple_of_nepthys
+          fuller_himself --> what_the_cops_know
+          fuller_himself --> georges_apartment
+          temple_of_nepthys --> the_leg_breaker
+          temple_of_nepthys --> miracle_machine
+          temple_of_nepthys --> addie_needs_answers
+          the_leg_breaker --> charlie_comes_clean
+          the_leg_breaker --> breaking_into_fullers
+          charlie_comes_clean --> breaking_into_fullers
+          what_the_cops_know --> the_peculiar_death_of_myron_fink
+          what_the_cops_know --> the_thing_in_the_morgue
+          interviewing_the_neighbors --> georges_apartment
+          georges_apartment --> questioning_pearl
+          georges_apartment --> the_psychical_investigator
+          addie_needs_answers --> men_gone_missing
+          men_gone_missing --> breaking_into_fullers
+          breaking_into_fullers --> sadie_and_the_scoop
+          questioning_pearl --> miracle_machine
+          miracle_machine --> going_on_the_grid
+          going_on_the_grid --> breaking_into_fullers
+          classDef completed fill:#f6f4d2stroke:#2c2c34stroke-width:4px;
+          classDef default fill:#d4e09bstroke:#2c2c34stroke-width:2px;
+        </div>
+    </body>
+</html>
